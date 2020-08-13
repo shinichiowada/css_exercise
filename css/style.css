@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* 共通部分
+-------------------- */
+html {
+    font-size: 100%;
+    margin-top: 40px;
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;  
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    padding: 0 10%;
+    padding-bottom: 30px;
+}
+.sns-list {
+    display: flex;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0 10%;
+}
+.sns-list li {
+    margin-left: 10px;
+}
+.main-image {
+  background-image: url(images/chair.jpg);
+  max-width: 100%;
+  padding: 0 10px;
+}
+h2.main-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    margin-top: 10%;
+    text-align: center;
+}
+.main-body img {
+    margin-top: 150px;
+    width:  300px;
+    height: 270px;
+    border-radius: 100%;
+}
+.main-body p {
+    font-family: "ヒラギノ角ゴ Pro W3", sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 1.9;
+    padding: 40px;
+    margin-top: 120px;
+}
+.main-body {
+    display: flex;
+}
+.container{
+    display: flex;
+}
+.left-image{
+    width: 300px;
+}
+.right-text{
+    flex: 1;
+}
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 0.875rem;
+}
