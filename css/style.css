@@ -7,7 +7,8 @@ html {
     margin-top: 40px;
 }
 body {
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    font-family: "Yu Gothic Medium", YuGothic, sans-serif;
+line-height: 1.7;
 }
 a {
     text-decoration: none;
@@ -23,6 +24,16 @@ h1 {
     padding: 0 10%;
     padding-bottom: 30px;
 }
+/*h2 {
+font-family: 'Abril Fatface', cursive;
+font-size: 30px;
+font-weight: bold;
+margin-right: 500px;
+text-align: center;
+}
+
+/* HEADER
+-------------------- */
 .sns-list {
     display: flex;
     font-size: 2.0rem;
@@ -33,48 +44,60 @@ h1 {
 .sns-list li {
     margin-left: 10px;
 }
+/*.wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MAIN
+-------------------- */
+.container {
+    display: flex;
+}
 .main-image {
-  background-image: url(images/chair.jpg);
-  max-width: 100%;
-  padding: 0 10px;
+    max-width: 100%;
+    padding: 0 10px;
 }
-h2.main-title {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 30px;
-    margin-top: 10%;
-    text-align: center;
-}
+
 .main-body img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px; 
     margin-top: 150px;
-    width:  300px;
-    height: 270px;
-    border-radius: 100%;
+    margin-bottom: auto;
 }
 .main-body p {
-    font-family: "ヒラギノ角ゴ Pro W3", sans-serif;
-    font-size: 16px;
-    font-weight: lighter;
-    text-align: left;
-    line-height: 1.9;
-    padding: 40px;
+flex: 1;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+margin: 200px 50px;
+text-align: justify;
+font-size: 14px;
+line-height: 1.9;
+}
+.wrapper h2 {
+    display: flexbox;
+    font-family: 'Abril Fatface', cursive;
+    vertical-align: middle;
     margin-top: 120px;
+    margin-bottom: 120px;
 }
 .main-body {
     display: flex;
 }
-.container{
-    display: flex;
-}
-.left-image{
-    width: 300px;
-}
-.right-text{
-    flex: 1;
-}
+
+/* FOOTER
+-------------------- */
 footer {
     background: black;
     text-align: center;
     padding: 20px 0;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2500px;
 }
 footer p {
     color: #fff;
