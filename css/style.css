@@ -6,34 +6,28 @@ html {
     font-size: 100%;
     margin-top: 40px;
 }
+
 body {
     font-family: "Yu Gothic Medium", YuGothic, sans-serif;
 line-height: 1.7;
 }
+
 a {
     text-decoration: none;
     color: black;  
 }
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-}
+
+/* HEADER
+-------------------- */
 h1 {
     font-family: 'Abril Fatface', cursive;
+    justify-content: space-between;
+    display: flex;
     font-size: 40px;
     padding: 0 10%;
     padding-bottom: 30px;
 }
-/*h2 {
-font-family: 'Abril Fatface', cursive;
-font-size: 30px;
-font-weight: bold;
-margin-right: 500px;
-text-align: center;
-}
 
-/* HEADER
--------------------- */
 .sns-list {
     display: flex;
     font-size: 2.0rem;
@@ -44,63 +38,182 @@ text-align: center;
 .sns-list li {
     margin-left: 10px;
 }
-/*.wrapper {
+header .wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 4%;
 }
 
 /* MAIN
 -------------------- */
-.container {
-    display: flex;
-}
 .main-image {
     max-width: 100%;
     padding: 0 10px;
 }
 
+.main-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.main-body {
+    display: flex;
+}
+
 .main-body img {
     border-radius: 50%;
     height: 300px;
-    width: 300px; 
-    margin-top: 150px;
-    margin-bottom: auto;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 100px;
 }
+
 .main-body p {
 flex: 1;
 font-family: 'M PLUS Rounded 1c', sans-serif;
-margin: 200px 50px;
+padding: 0 60px;
+margin-top: 60px;
+margin-left: 10px;
 text-align: justify;
 font-size: 14px;
 line-height: 1.9;
 }
-.wrapper h2 {
-    display: flexbox;
-    font-family: 'Abril Fatface', cursive;
-    vertical-align: middle;
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-.main-body {
-    display: flex;
-}
+
+
 
 /* FOOTER
 -------------------- */
 footer {
     background: black;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 2500px;
+    padding: 26px 0;
+    margin: 0 10px 10px 10px;
 }
 footer p {
     color: #fff;
-    text-align: center;
     font-size: 0.875rem;
+}
+
+/* モバイル版
+ <タブレット>
+-------------------- */
+@media (max-width: 768px) {
+    .home {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .sns-list {
+        font-size: 30px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+        margin-left: auto;
+    }
+
+    /* MAIN
+-------------------- */
+    header .wrapper {
+        flex-direction: column;
+    }
+    .main-title {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    .main-body {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .main-body img {
+        width: 300px;
+        margin: auto;
+    }
+
+    .main-body p {
+        font-size: 16px;
+        margin: 30px auto;
+        text-align: left;
+    }
+
+    /* FOOTER
+-------------------- */
+    footer {
+        margin-top: 80px;
+        height: 80px;
+    }
+    footer p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    header .wrapper {
+        flex-direction: column;
+    }
+}
+
+/* モバイル版
+ <スマートフォン>
+-------------------- */
+@media (max-width: 480px) {
+    .home {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .sns-list {
+        font-size: 30px;
+        margin-right: 40px;
+        margin-bottom: 30px;
+        margin-left: auto;
+    }
+
+    /* MAIN
+-------------------- */
+    header .wrapper {
+        flex-direction: column;
+    }
+    .main-title {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+
+    .main-body {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .main-body img {
+        width: 300px;
+        margin: auto;
+    }
+
+    .main-body p {
+        font-size: 16px;
+        margin: 30px auto;
+        text-align: left;
+    }
+
+    /* FOOTER
+-------------------- */
+    footer {
+        margin-top: 80px;
+        height: 80px;
+    }
+    footer p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    header .wrapper {
+        flex-direction: column;
+    }
 }
